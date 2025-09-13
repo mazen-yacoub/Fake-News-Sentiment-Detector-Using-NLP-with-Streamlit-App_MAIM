@@ -27,10 +27,10 @@ This system analyzes news articles and predicts whether they are **Real** or **F
 ```
 fake-news-detection/
 ├── notebooks/
-│   ├── 01_EDA_Analysis.ipynb          # Exploratory Data Analysis
-│   └── 02_Model_Training.ipynb        # Model training and evaluation
+│   ├── explaination.ipynb          # Exploratory Data Analysis
+│   └── modeling.ipynb        # Model training and evaluation
 ├── app/
-│   ├── streamlit_app.py               # Web application
+│   ├── app.py               # Web application
 │   ├── model.pkl                      # Trained model
 │   └── vectorizer.pkl                 # Text vectorizer
 ├── data/
@@ -132,3 +132,10 @@ sample_text = "Your news article text here..."
 result, confidence = detector.predict(sample_text)
 print(f"Prediction: {result} (Confidence: {confidence:.2f})")
 ```
+
+## 🌐 Access the Web App
+
+You can use the web app directly via this link (no installation required):  
+[📰 Fake News Detector](https://fake-news-sentiment-detector-using-nlp-with-app-appmaim-zgjrkq.streamlit.app/)
+
+Simply click the link, paste your news text, and click **Analyze News** to see if it’s real or fake.
