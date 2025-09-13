@@ -27,7 +27,7 @@ This system analyzes news articles and predicts whether they are **Real** or **F
 ```
 fake-news-detection/
 ├── notebooks/
-│   ├── explaination.ipynb          # Exploratory Data Analysis
+│   ├── exploration.ipynb          # Exploratory Data Analysis
 │   └── modeling.ipynb        # Model training and evaluation
 ├── app/
 │   ├── app.py               # Web application
