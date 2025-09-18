@@ -26,34 +26,36 @@ st.markdown("""
     <style>
         /* Background */
         .stApp {
-            background-color: #f0f4f8; /* light blue-grey */
+            background-color: #f0f4f8; /* light grey-blue */
+            color: #000000 !important; /* force black text everywhere */
         }
 
         /* Title */
         h1 {
-            color: #2c3e50;
+            color: #1a1a1a; /* very dark gray for best readability */
             text-align: center;
         }
 
         /* Buttons */
         .stButton>button {
-            background-color: #3498db;
-            color: white;
+            background-color: #0056b3; /* darker blue (better contrast) */
+            color: #ffffff !important;
             border-radius: 8px;
             padding: 0.6em 1.2em;
             font-weight: bold;
             border: none;
         }
         .stButton>button:hover {
-            background-color: #2980b9;
-            color: white;
+            background-color: #003f7f; /* even darker on hover */
+            color: #ffffff !important;
         }
 
         /* Text Area */
         .stTextArea textarea {
-            border: 2px solid #3498db;
+            border: 2px solid #0056b3;
             border-radius: 8px;
             background-color: #ffffff;
+            color: #000000; /* ensure readable text */
         }
 
         /* Metrics */
@@ -61,9 +63,11 @@ st.markdown("""
             background: #ffffff;
             padding: 10px;
             border-radius: 10px;
+            color: #000000; /* force metric text black */
         }
     </style>
 """, unsafe_allow_html=True)
+
 
 # =======================
 # NLTK Setup
